@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import 'reset';
+
+.header{
+    background: #f8fdf5;
+    height: 120px;
+    .logo{
+        width: 164px;
+        margin-top: 60px;
+        margin-left: 600px;
+        img{
+            width: 100%;
+        }
+    }
+    .nav{
+        width: 143px;
+        font-size: 20px;
+        margin-top: 80px;
+        margin-right: 700px;
+        ul li{
+            display: inline-block;
+            cursor:pointer;
+        }
+        .index{
+            font-weight: 800;
+        }
+    }
+}
+.section{
+    width: 100%;
+    .phone{
+        width: 533px;
+        margin-top: 164px;
+        margin-left: 500px;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .font{
+        float: right;
+        margin-right: 448px;
+        margin-top: 440px;
+        color: #4fbe54;
+        font-size: 26px;
+    }
+    .about{
+        display: none;
+        width: 400px;
+        position: absolute;
+        color: #4fbe54;
+        right: 500px;
+        top: 400px;
+        font-size: 26px;
+    }
+}
+.bottom{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}

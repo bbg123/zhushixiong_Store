@@ -1,0 +1,12 @@
+$('.index').on("click",function(){
+	$('.about').css("display","none");
+	$('.font').css("display","block");
+	$('.index').css("font-weight","800");
+	$(".about_us").css("font-weight","100");
+})
+$('.about_us').on("click",function(){
+	$('.about').css("display","block");
+	$('.font').css("display","none");
+	$('.about_us').css("font-weight","800");
+	$(".index").css("font-weight","100");
+})

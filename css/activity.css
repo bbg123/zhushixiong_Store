@@ -1,0 +1,50 @@
+
+.zsx_home_content_main {
+  margin-top: 40px;
+}
+
+.zsx_home_content_main_box {
+  width: 90%;
+  margin: 0 auto 40px;
+  box-shadow: 2px 2px 5px 5px #f3f3f3;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.zsx_home_content_main_box_img {
+  width: 60%;
+}
+
+.zsx_home_content_main_box_content {
+  width: 40%;
+}
+
+.zsx_home_content_main_box_content_ewm {
+  width: 40%;
+  margin: 18px auto;
+}
+
+.zsx_home_content_main_box_content_text {
+  text-align: center;
+}
+
+/* 移动端 */
+@media screen and (max-width: 996px) {
+  .zsx_home_content_main_box {
+    padding: 5px;
+  }
+  .zsx_home_content_main_box_img {
+    width: 70%;
+  }
+  .zsx_home_content_main_box_content {
+    width: 30%;
+  }
+  .zsx_home_content_main_box_content_ewm {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .zsx_home_content_main_box_content_text {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}

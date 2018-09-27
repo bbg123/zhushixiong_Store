@@ -1,0 +1,21 @@
+.zsx_home_content_img {
+  width: 100%;
+}
+
+.zsx_home_content_text {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.zsx_home_content_text h2 {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.zsx_home_content_text p {
+  line-height: 2;
+  text-indent: 2em;
+  margin-bottom: 10px;
+  color: #303030;
+  font-size: 20px;
+}

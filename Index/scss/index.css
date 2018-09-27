@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+}
+
+html, body {
+  width: 100%;
+}
+
+.float_l {
+  float: left;
+}
+
+.float_r {
+  float: right;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.header {
+  background: #f8fdf5;
+  height: 120px;
+}
+
+.header .logo {
+  width: 164px;
+  margin-top: 60px;
+  margin-left: 600px;
+}
+
+.header .logo img {
+  width: 100%;
+}
+
+.header .nav {
+  width: 143px;
+  font-size: 20px;
+  margin-top: 80px;
+  margin-right: 700px;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header .nav .index {
+  font-weight: 800;
+}
+
+.section {
+  width: 100%;
+}
+
+.section .phone {
+  width: 533px;
+  margin-top: 164px;
+  margin-left: 500px;
+  float: left;
+}
+
+.section .phone img {
+  width: 100%;
+}
+
+.section .font {
+  float: right;
+  margin-right: 448px;
+  margin-top: 440px;
+  color: #4fbe54;
+  font-size: 26px;
+}
+
+.section .about {
+  display: none;
+  width: 400px;
+  position: absolute;
+  color: #4fbe54;
+  right: 500px;
+  top: 400px;
+  font-size: 26px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+}
+
+.bottom img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

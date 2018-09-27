@@ -1,0 +1,141 @@
+
+.zsx_home_content_form {
+  width: 70%;
+  margin: 40px auto 80px;
+}
+
+.zsx_home_content_form input {
+  padding: 15px 10px;
+  background-color: transparent;
+  border: 1.5px solid #9d9d9d;
+  color: #b6b6b6;
+  display: block;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.zsx_home_content_form input::-webkit-input-placeholder,.zsx_home_content_checkbox_bottombox_captcha input::-webkit-input-placeholder{
+  color:#b6b6b6;
+}
+.zsx_home_content_form input::-moz-placeholder,.zsx_home_content_checkbox_bottombox_captcha input::-moz-input-placeholder{
+  color:#b6b6b6;
+}
+.zsx_home_content_form input:-moz-placeholder,.zsx_home_content_checkbox_bottombox_captcha input::-moz-input-placeholder{
+  color:#b6b6b6;
+}
+.zsx_home_content_form input:-ms-input-placeholder,.zsx_home_content_checkbox_bottombox_captcha input::-ms-input-placeholder{
+  color:#b6b6b6;
+}
+
+input[name="company"],
+input[name=address] {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.zsx_home_content_form_title,
+.zsx_home_content_checkbox_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.zsx_home_content_form_box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.zsx_home_content_form_box input {
+  width: 49%;
+  float: left;
+}
+
+.zsx_home_content_form_box input:first-child {
+  margin-right: 2%;
+}
+
+.zsx_home_content_checkbox {
+  width: 70%;
+  margin:0 auto 40px;
+}
+
+.zsx_home_content_checkbox label {
+  float: left;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.zsx_home_content_checkbox input {
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid #454545;
+  color: #454545;
+  position: relative;
+  margin-right: 15px;
+  border-radius: 0;
+}
+
+.other {
+  display: none;
+}
+
+.other input{
+  width: 200px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.zsx_home_content_checkbox_bottombox {
+  margin-top: 20px;
+}
+
+.zsx_home_content_checkbox_bottombox_captcha input{
+  width: 200px;
+  height: 52px;
+  font-size: 20px;
+  margin-right: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.zsx_home_content_checkbox_bottombox_captcha_img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.zsx_home_content_checkbox_bottombox_btn {
+  background-color: #70bb29;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 18px 25px;
+  margin-left: 20px;
+}
+
+/* 移动端 */
+
+@media screen and (max-width: 996px) {
+  .zsx_home_content_form, .zsx_home_content_checkbox {
+    width: 95%;
+    margin: 40px auto;
+  }
+  .zsx_home_content_checkbox_title {
+    margin-bottom: 20px;
+  }
+  .zsx_home_content_checkbox input {
+    margin-right: 5px;
+  }
+  .zsx_home_content_checkbox_bottombox_captcha input {
+    width: 50%;
+    margin-right: 0;
+  }
+  .zsx_home_content_checkbox_bottombox_captcha_img {
+    width: 45%;
+    margin-left: 2%;
+  }
+  .zsx_home_content_checkbox_bottombox_btn {
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import 'reset';
+
+
+.nav{
+    background: #F8FDF5;
+    height: 60px;
+}
+.nav-right{
+    li{
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+.header{
+    background: #f8fdf5;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.about{
+    margin-top: 80px;
+}
+.about_q{
+    display: none;
+}
+.home{
+    color: #20b429;
+    letter-spacing: 2px;
+}
+.logo{
+    margin-top: 5px;
+}
+.choice{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.index{
+    font-weight: 700;
+    margin-right: 40px;
+}
+.about_q{
+    color: #20B429;
+    font-size: 20px;
+    .text{
+        line-height: 41px;
+    }
+}

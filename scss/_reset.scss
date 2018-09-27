@@ -1,0 +1,28 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+body{
+    line-height: 1;
+}
+html,body{
+    width: 100%;
+}
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}

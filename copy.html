@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+			    margin: 0;
+			    padding: 0;
+			    font-family: "SimHei";
+				vertical-align: top;
+			}
+			ol, ul {
+			    list-style: none;
+			}
+			body{
+			    line-height: 1;
+			}
+			html,body{
+			    width: 100%;
+			}
+			.float_l{
+			    float: left;
+			}
+			.float_r{
+			    float: right;
+			}
+			.view{
+				padding-top: 44px;
+			}
+			.clearfix:after {
+			    clear: both;
+			    content: '';
+			    display: block;
+			    width: 0;
+			    height: 0;
+			    visibility: hidden;
+			}
+			#web{
+				position: absolute;
+				width: 500px;
+				top: 30px;
+			}
+			.num{
+				line-height: 70px;
+				height: 70px;
+				border-top: 1px solid #000000;
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+				border-bottom: 2px solid #000000;
+				text-align: center;
+				font-size: 36pt;
+			}
+			.header_img{
+				font-weight: bolder;
+				font-size: 16px;
+				border-top: 1px solid #000000;
+				border-bottom: 2px solid #000000;
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+			}
+			.img{
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 20px;
+				padding-bottom: 10px;
+			}
+			img{
+				width: 100%;
+				overflow: hidden;
+			}
+			.img_num{
+				font-size: 20px;
+			}
+			.qian{
+				width: 4%;
+				font-size: 16px;
+				padding-top: 72px;
+				padding-bottom: 68px;
+				padding-right: 5px;
+				text-align: center;
+				border-left: 1px solid #000000;
+				border-bottom: 1px solid #000000;
+			}
+			.big{
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+			}
+			.dizhi{
+				width: 94%;
+			}
+			.ji{
+				padding: 5px;
+				border-bottom: 1px solid #000000;
+			}
+			.give{
+				font-size: 12px;
+				font-weight: bold;
+				width: 15%;
+			}
+			.d{
+				width: 80%;
+				overflow: hidden;
+				font-size: 16px;
+				font-weight: bold;
+				word-break: break-all;
+			}
+			.ji_num{
+				margin-top: 10px;
+			}
+			.bottom_u{
+				font-size: 0;
+				height: 50px;
+				border-bottom: 1px solid #000000;
+			}
+			.li{
+				font-size: 14px;
+				display: inline-block;
+				width: 46%;
+				height: 45px;
+			}
+			.time{
+				border-left: 1px solid #000000;
+				padding-left: 5px;
+				padding-top: 5px;
+			}
+			.take{
+				padding-left: 5px;
+				padding-top: 5px;
+			}
+			.year{
+				text-align: right;
+			}
+			.cent_img{
+				border-top: 3px solid #000000;
+				border-bottom: 1px solid #000000;
+			}
+			.cent_u{
+				font-size: 0;
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+				padding-bottom: 100px;
+				padding-top: 102px;
+			}
+			.lis{
+				width: 32%;
+				font-size: 16px;
+				text-align: center;
+				display: inline-block;
+				padding: 5px;
+				padding-left: 20px;
+			}
+			.ma{
+				float: right;
+				font-weight: bold;
+				width: 47%;
+				padding-right: 30px;
+			}
+			.shou{
+				width: 4.7%;
+				font-size: 16px;
+				padding-top: 50px;
+				padding-bottom: 38px;
+				padding-right: 5px;
+				text-align: right;
+				border-left: 1px solid #000000;
+				border-bottom: 1px solid #000000;
+			}
+			.bigs{
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+			}
+			.xiang{
+				border-bottom: 1px solid #000000;
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+			}
+			.goods{
+				width: 70%;
+				border-right: 1px solid #000000;
+				padding: 5px;
+				padding-bottom: 14px;
+			}
+			.qing{
+				height: 50px;
+			}
+			.mas{
+				width: 25%;
+				line-height: 29px;
+				text-align: center;
+			}
+			.chack{
+				text-align: right;
+				padding: 5px;
+				border-left: 1px solid #000000;
+				border-right: 1px solid #000000;
+				border-bottom: 1px solid #000000;
+			}
+			.imgz{
+				width: 63%;
+				line-height:60px ;
+				margin: 0 auto;
+			}
+		</style>
+		<script src="js/JsBarcode.all.min.js" ></script>
+		<script>
+			Number.prototype.zeroPadding = function(){
+				var ret = "" + this.valueOf();
+				return ret.length == 1 ? "0" + ret : ret;
+			};
+		</script>
+	</head>
+	<body>
+		<!--startprint-->
+		<div id="web">
+			<div class="view">
+				<p class="header"></p>
+				<p class="num">600-090-010</p>
+				<div class="header_img">
+					<div class="img"><img id="barcode1"/> <br />
+					812669790015
+					</div>
+				</div>
+				<div class="big clearfix">
+					<div class="dizhi float_l">
+						<div class="ji clearfix">
+							<div class="give float_l">寄件人:</div>
+							<div class="d float_l">租师兄 广东省 广州市 黄埔区 敬业路97号淘汇商业园二楼 <br /><p class="ji_num">18888888888</p></div>
+						</div>
+						<div class="ji clearfix">
+							<div class="give float_l">收件人:</div>
+							<div class="d float_l">李杰 广东省 广州市 黄埔区 敬业路97号淘汇商业园二楼 <br /><p class="ji_num">18888888888</p></div>
+						</div>
+						<div class="bottom">
+							<ul class="bottom_u">
+								<li class="take li">收件人/代收人:</li>
+								<li class="time li">签收时间: <p class="year">年</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="qian float_r">
+						签收联
+					</div>
+				</div>
+				<div class="cent_img">
+					<ul class="cent_u">
+						<li class="ma lis"><img id="barcode2"/><br />
+						<script>
+							</script>
+						<p class="numss">812669790015</p></li>
+					</ul>
+				</div>
+				<div class="bigs clearfix">
+					<div class="dizhi float_l">
+						<div class="ji clearfix">
+							<div class="give float_l">寄件人:</div>
+							<div class="d float_l">租师兄 广东省 广州市 黄埔区 敬业路97号淘汇商业园二楼 <br /><p class="ji_num">18888888888</p></div>
+						</div>
+						<div class="ji clearfix">
+							<div class="give float_l">收件人:</div>
+							<div class="d float_l">李杰 广东省 广州市 黄埔区 敬业路97号淘汇商业园二楼 <br /><p class="ji_num">18888888888</p></div>
+						</div>
+					</div>
+					<div class="shou float_r">
+						收件联
+					</div>
+				</div>
+				<div class="xiang clearfix">
+					<div class="float_l goods">
+						<div class="float_l qing">
+							订单详情:
+						</div>
+						<div class="goods_take">
+							宾爵BEGEEL多功能酷赛六针男士石英手表B978M
+						</div>
+					</div>
+					<div class="mas float_l">
+						[二维码]
+					</div>
+				</div>
+				<div class="chack">
+					已验视
+				</div>
+			</div>
+		</div>
+		<!--endprint-->
+		
+		<button class="button" style="margin-left: 30px;" onclick="preview()">打印</button>
+	</body>
+	<script type="text/javascript"> 
+		var ma = document.getElementsByClassName('numss')[0];
+		var ma_tex = ma.innerText;
+		JsBarcode("#barcode2", ma_tex,{
+			displayValue:false,
+			height:30,
+		});
+		var img = document.getElementsByClassName('img')[0];
+		var img_tex = img.innerText.trim()
+		JsBarcode("#barcode1", img_tex,{
+			displayValue:false,
+			height:30,
+		});
+	function preview(){
+		var bdhtml=window.document.body.innerHTML;//获取当前页的html代码 
+		var startStr="<!--startprint-->";//设置打印开始区域 
+		var endStr="<!--endprint-->";//设置打印结束区域 
+		var printHtml=bdhtml.substring(bdhtml.indexOf(startStr)+startStr.length,bdhtml.indexOf(endStr));//从标记里获取需要打印的页面 
+		 
+		window.document.body.innerHTML=printHtml;//需要打印的页面 
+		window.print(); 
+		window.document.body.innerHTML=bdhtml;//还原界面 
+	}
+	</script> 
+</html>
